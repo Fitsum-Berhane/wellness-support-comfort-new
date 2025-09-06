@@ -1,0 +1,317 @@
+/* Dashboard Specific Styles */
+
+.dashboard-header {
+    padding: 6rem 0 3rem;
+    background: linear-gradient(135deg, rgba(244, 143, 177, 0.1), rgba(255, 255, 255, 0.9));
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    color: #0a192f;
+    margin-bottom: 1rem;
+}
+
+.dashboard-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.dashboard-main {
+    padding: 2rem 0 4rem;
+}
+
+/* Top Row Layout */
+.dashboard-top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Profile Panel */
+.profile-panel {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f48fb1;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info h3 {
+    color: #0a192f;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.wellness-goal {
+    color: #f48fb1 !important;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Consultation Panel */
+.consultation-panel {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-panel h3 {
+    color: #0a192f;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.consultation-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.consultation-section h4 {
+    color: #f48fb1;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.consultation-item {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.consultation-item.upcoming {
+    background: linear-gradient(135deg, rgba(244, 143, 177, 0.1), rgba(255, 255, 255, 0.9));
+    border: 1px solid #f48fb1;
+}
+
+.consultation-date {
+    font-weight: 500;
+    color: #0a192f;
+    margin-bottom: 0.25rem;
+}
+
+.consultation-practitioner {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+/* Specialty Explorer */
+.specialty-explorer {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.specialty-explorer h2 {
+    color: #0a192f;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.specialty-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.specialty-tab {
+    background: #f8f9fa;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.specialty-tab:hover, .specialty-tab.active {
+    background: linear-gradient(135deg, #f48fb1, #f06292);
+    color: white;
+}
+
+.content-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid #f48fb1;
+    color: #f48fb1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #f48fb1;
+    color: white;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.content-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-item h4 {
+    color: #0a192f;
+    margin-bottom: 0.5rem;
+}
+
+.content-item p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.content-type {
+    display: inline-block;
+    background: #f48fb1;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Product Recommendations */
+.recommendations-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-section h2 {
+    color: #0a192f;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.recommendations-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.recommendation-panel h3 {
+    color: #0a192f;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.product-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.product-item:hover {
+    background: #f0f0f0;
+}
+
+.product-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-info h4 {
+    color: #0a192f;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.product-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-reason {
+    color: #f48fb1;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-top-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .recommendations-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .specialty-tabs {
+        justify-content: flex-start;
+    }
+    
+    .content-filters {
+        justify-content: flex-start;
+    }
+    
+    .dashboard-header h1 {
+        font-size: 2rem;
+    }
+}

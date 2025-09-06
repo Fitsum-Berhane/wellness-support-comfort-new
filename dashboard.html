@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ReframeYou</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html">ReframeYou</a></h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="#consultation" class="nav-cta">Book a Consultation</a></li>
+                <li><a href="#logout">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Header -->
+    <section class="dashboard-header">
+        <div class="container">
+            <h1>Your Wellness Dashboard</h1>
+            <p>Welcome back! Continue your journey to feeling better in your own skin.</p>
+        </div>
+    </section>
+
+    <!-- Main Dashboard Content -->
+    <div class="dashboard-main">
+        <div class="container">
+            <!-- Top Row: Profile & Consultations -->
+            <div class="dashboard-top-row">
+                <!-- User Profile Panel -->
+                <div class="profile-panel">
+                    <div class="profile-header">
+                        <img src="https://d64gsuwffb70l.cloudfront.net/68ba900b1c8f8ce379ca4381_1757057092117_defc50ee.webp" alt="Profile" class="profile-photo">
+                        <div class="profile-info">
+                            <h3>Sarah Johnson</h3>
+                            <p>sarah.johnson@email.com</p>
+                            <p class="wellness-goal">Goal: Improve skin confidence & sleep quality</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consultation History Panel -->
+                <div class="consultation-panel">
+                    <h3>Your Consultations</h3>
+                    <div class="consultation-sections">
+                        <div class="consultation-section">
+                            <h4>Upcoming</h4>
+                            <div class="consultation-item upcoming">
+                                <div class="consultation-date">Dec 15, 2024 - 2:00 PM</div>
+                                <div class="consultation-practitioner">Dr. Sarah Chen - Dermatologist</div>
+                                <button class="btn-primary btn-small">Join Session</button>
+                            </div>
+                        </div>
+                        <div class="consultation-section">
+                            <h4>Previous</h4>
+                            <div class="consultation-item">
+                                <div class="consultation-date">Dec 1, 2024</div>
+                                <div class="consultation-practitioner">Dr. Maria Rodriguez - Nutritionist</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialty Explorer Section -->
+            <div class="specialty-explorer">
+                <h2>Explore Wellness Content</h2>
+                
+                <!-- Specialty Menu -->
+                <div class="specialty-menu">
+                    <div class="specialty-tabs" id="specialty-tabs">
+                        <!-- Dynamic specialty tabs loaded by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Content Display Area -->
+                <div class="content-display" id="content-display">
+                    <div class="content-filters">
+                        <button class="filter-btn active" data-filter="all">Show All</button>
+                        <button class="filter-btn" data-filter="subspecialties">Subspecialties</button>
+                        <button class="filter-btn" data-filter="condition-videos">Condition Videos</button>
+                        <button class="filter-btn" data-filter="product-videos">Product Videos</button>
+                    </div>
+                    <div class="content-grid" id="content-grid">
+                        <!-- Dynamic content loaded by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Recommendations Section -->
+            <div class="recommendations-section">
+                <h2>Product Recommendations</h2>
+                <div class="recommendations-row">
+                    <!-- AI Recommendations -->
+                    <div class="recommendation-panel">
+                        <h3>🤖 AI Recommendations</h3>
+                        <div class="product-list" id="ai-products">
+                            <!-- Dynamic AI product recommendations -->
+                        </div>
+                    </div>
+
+                    <!-- Practitioner Recommendations -->
+                    <div class="recommendation-panel">
+                        <h3>👩‍⚕️ Practitioner Recommendations</h3>
+                        <div class="product-list" id="practitioner-products">
+                            <!-- Dynamic practitioner product recommendations -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ReframeYou</h3>
+                    <p>Empowering wellness journeys with professional guidance and compassionate care.</p>
+                    <p>Email: <a href="mailto:hello@reframeyou.org">hello@reframeyou.org</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
