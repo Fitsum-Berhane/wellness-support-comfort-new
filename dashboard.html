@@ -83,16 +83,45 @@
                     </div>
                 </div>
 
-                <!-- Content Display Area -->
-                <div class="content-display" id="content-display">
-                    <div class="content-filters">
-                        <button class="filter-btn active" data-filter="all">Show All</button>
-                        <button class="filter-btn" data-filter="subspecialties">Subspecialties</button>
-                        <button class="filter-btn" data-filter="condition-videos">Condition Videos</button>
-                        <button class="filter-btn" data-filter="product-videos">Product Videos</button>
+                <!-- Condition Selection (Premium Design) -->
+                <div class="condition-section" id="condition-section" style="display: none;">
+                    <h3>Select a Condition</h3>
+                    <div class="condition-selector">
+                        <select id="condition-select" class="premium-dropdown">
+                            <option value="">Choose a condition to explore...</option>
+                        </select>
+                        <div class="dropdown-icon">▼</div>
                     </div>
-                    <div class="content-grid" id="content-grid">
-                        <!-- Dynamic content loaded by JavaScript -->
+                </div>
+
+                <!-- Premium Content Navigation -->
+                <div class="content-navigation" id="content-navigation" style="display: none;">
+                    <div class="nav-pills">
+                        <button class="nav-pill active" data-content="detailed">
+                            <span class="pill-icon">📖</span>
+                            <span class="pill-text">Detailed Explanation</span>
+                        </button>
+                        <button class="nav-pill" data-content="video">
+                            <span class="pill-icon">🎥</span>
+                            <span class="pill-text">Video Explanation</span>
+                        </button>
+                        <button class="nav-pill" data-content="product-videos">
+                            <span class="pill-icon">🛍️</span>
+                            <span class="pill-text">Product Videos</span>
+                        </button>
+                        <button class="nav-pill" data-content="products">
+                            <span class="pill-icon">⭐</span>
+                            <span class="pill-text">All Recommended Products</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="content-display" id="content-display">
+                    <div class="content-area" id="content-area">
+                        <div class="welcome-message">
+                            <h3>🌟 Welcome to Your Wellness Explorer</h3>
+                            <p>Select a specialty above to begin exploring conditions and treatments tailored to your wellness journey.</p>
+                        </div>
                     </div>
                 </div>
             </div>
